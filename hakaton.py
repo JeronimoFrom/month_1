@@ -24,18 +24,6 @@ if my_number == random_number:
 else:
     print ("Вы проиграли.")
 
-    import sys
-
-    min = sys.float_info.max
-    max = sys.float_info.min
-
-    for i in range(6):
-	    a = float(input('enter 6 number '))
-	    if a > max:
-		    max = a
-	    if a < min:
-		    min = a
-    print('\n', 'min is: ', round(min, 2), '\n', 'max is: ', round(max, 2))
 
 
 
@@ -71,7 +59,18 @@ while True:
         # Напишите программу, которая запрашивает у пользователя шесть вещественных чисел.
         # На экран выводит минимальное и максимальное из них, округленные до двух знаков после запятой.
         # Выполните задание без использования встроенных функций min() и max().
+ import sys
 
+    min = sys.float_info.max
+    max = sys.float_info.min
+
+    for i in range(6):
+	    a = float(input('enter 6 number '))
+	    if a > max:
+		    max = a
+	    if a < min:
+		    min = a
+    print('\n', 'min is: ', round(min, 2), '\n', 'max is: ', round(max, 2))
 # Задание 5:
 # Напишите программу которая принимает число любой длины и вытаскивает из него самое большое и самое маленькое число.
 
